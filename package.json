@@ -1,0 +1,32 @@
+{
+  "name": "digitalangels",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "start-nodemon": "nodemon -r esm --ignore 'tokens.json' ./bin/www",
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "esm": "^3.2.25",
+    "express": "~4.16.1",
+    "googleapis": "^39.2.0",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "flow-bin": "^0.107.0",
+    "nodemon": "^1.19.2"
+  }
+}
